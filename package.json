@@ -1,0 +1,28 @@
+{
+  "name": "whitewater-track-editor",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test:logic": "rolldown scripts/smoke.ts --platform=node --format=esm -o scripts/.smoke.bundle.mjs && node scripts/.smoke.bundle.mjs && rm -f scripts/.smoke.bundle.mjs"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "three": "latest",
+    "three-mesh-bvh": "latest",
+    "three-stdlib": "latest",
+    "zustand": "^5.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/three": "latest",
+    "@vitejs/plugin-react": "latest",
+    "typescript": "latest",
+    "vite": "latest"
+  }
+}
