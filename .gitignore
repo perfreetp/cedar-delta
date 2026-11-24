@@ -13,6 +13,9 @@ credentials*.json
 .npmrc
 .pypirc
 node_modules/
+dist/
+screenshots/
+downloads/
 __pycache__/
 .venv/
 venv/
