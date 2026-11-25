@@ -1,0 +1,23 @@
+{
+  "name": "implant-guide-planner",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "tsx tests/smoke.test.ts",
+    "test:e2e": "node tests/run-all.mjs"
+  },
+  "dependencies": {
+    "playcanvas": "1.77.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.7",
+    "playwright-core": "^1.65.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  }
+}
